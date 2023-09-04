@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<block class="Magento\Framework\View\Element\Template" name="simple.block.example" template="TemaJaque::html/custom.phtml">
+    <arguments>
+        <argument name="custom_value" xsi:type="string">This is a custom value</argument>
+    </arguments>
+</block>

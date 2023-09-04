@@ -1,0 +1,118 @@
+a:visited, .alink:visited, a, a:hover, a:active{
+    text-decoration: none;
+}
+.page-main{
+    padding: 0 !important;
+}
+.container{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.container-fluid{
+    background: #e6e6e6;
+    padding: 15px;
+}
+.container .row, .container-fluid .row{
+    display: inline-flex;
+}
+.container .row .col-lg-3, .container-fluid .row .col-lg-3 {
+    padding: 12px 80px;
+}
+.container-fluid .row .col-lg-3 img{
+    max-width: 100px;
+    height: auto;
+}
+.container-fluid .row h2{
+    color: var(--brand-color-02, #FF7913);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.container-fluid .row .col-lg-3 p{
+    color: var(--brand-color-02, #FF7913);
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+/*Produtos na home*/
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 4))}
+}
+
+.slider {
+	background: white;
+	height: 500px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px !important;
+    max-width: 100%;
+}
+.slider::before, .slider::after{
+    background-color: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+	
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+	
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    /*width: calc(250px * 14);*/
+    width: min-content;
+}
+	
+.slider .slide {
+    width: 250px;
+    padding: 1%;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125) !important;
+}
+
+.name-product {
+    color: #6e6e6e;
+    font-size: 16px;
+    opacity: 0.5;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.slide.text-center:hover {
+    background: #FF7913;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.slide.text-center:hover a p{
+    color: #7B61FF;
+}
+
+.slider .slide-track .slide img {
+    height: 290px;
+}
+
+.container-fluid.text-center.banner-grid img {
+    height: 350px;
+    width: auto;
+}
+.container-fluid.text-center.banner-grid .col-lg-2.col-md-4.col-sm-12 {
+    padding: 0px;
+}
+.banner-grid .row{
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
